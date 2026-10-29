@@ -1,12 +1,11 @@
-# Despliegue de los 3 retos en AWS (ECS Express Mode + Bedrock)
+# Retos IA · Periferia IT Group
 
-Prerrequisitos (una vez): AWS CLI v2 actualizado, Docker con buildx, Bun ≥ 1.1, y en la consola de **Amazon Bedrock → Model catalog** habilitar *Claude Sonnet 4.5* (Anthropic pide el formulario de caso de uso la primera vez) en `us-east-1`.
+![Arquitectura](docs-arquitectura.png)
 
-```bash
-export AWS_REGION=us-east-1
-export ACCESS_KEY="elige-una-clave"     # opcional: protege los links
-for r in reto-01 reto-02 reto-03; do (cd $r && bun install && bun test && ./scripts/deploy-aws.sh); done
-```
+| Reto | Link |
+|---|---|
+| 01 · Registro como Proveedor | https://re-ce938a56d5d74948a23273f10d06e014.ecs.us-east-1.on.aws |
+| 02 · Contratos Vigentes | https://re-1c0cb8d2136c45d89277bb4ff4427538.ecs.us-east-1.on.aws |
+| 03 · Órdenes de Compra SAP | https://re-fa8a5d0ac10e4c2fa08547c9c4625f83.ecs.us-east-1.on.aws |
 
-Cada script imprime `https://<servicio>.ecs.us-east-1.on.aws`. Ponla en el README del reto.
-Apagar tras la defensa: `(cd reto-0X && ./scripts/destroy-aws.sh)`.
+Clave de acceso: compartida por correo. Detalle técnico en `reto-0X/SOLUCION.md`; despliegue en `DESPLIEGUE.md`.
