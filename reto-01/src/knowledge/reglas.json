@@ -1,0 +1,8 @@
+{
+  "umbral_confianza": 0.8,
+  "identificador_tributario_por_pais": { "CO": "NIT", "EC": "RUC", "PE": "RUC", "PA": "RUC", "HN": "RTN" },
+  "pais_maestro": "CO",
+  "rutas_sensibles_prefijo": ["banco."],
+  "formatos_soportados": ["xlsx", "pdf"],
+  "formatos_documentados": ["portal"]
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agente</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      <div>
+        <h1 id="titulo">Agente</h1>
+        <p id="subtitulo" class="muted"></p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="modelo" class="pill muted"></span>
+      <button id="nueva" class="ghost" type="button">Nueva sesión</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="chat" aria-label="Conversación">
+      <div id="mensajes" class="mensajes" aria-live="polite">
+        <div id="vacio" class="vacio">
+          <p>Escribe una instrucción o usa un ejemplo:</p>
+          <div id="ejemplos" class="ejemplos"></div>
+        </div>
+      </div>
+
+      <div id="banner" class="banner" hidden>
+        <strong>El agente espera tu confirmación.</strong>
+        <span>Nada se ejecuta hasta que respondas.</span>
+        <div class="banner-actions">
+          <button type="button" data-quick="Sí, confirmo. Procede.">Sí, confirmo</button>
+          <button type="button" class="ghost" data-quick="No, no procedas todavía.">No</button>
+        </div>
+      </div>
+
+      <form id="form" class="composer">
+        <textarea id="entrada" rows="2" placeholder="Ej.: procesa el caso…" autocomplete="off"></textarea>
+        <button id="enviar" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <aside class="panel" aria-label="Archivos generados">
+      <div class="panel-head">
+        <h2>Archivos en <code>out/</code></h2>
+        <button id="refrescar" class="ghost small" type="button">Actualizar</button>
+      </div>
+      <ul id="archivos" class="archivos"><li class="muted">Sin archivos todavía.</li></ul>
+      <h2 class="mt">Herramientas</h2>
+      <ul id="herramientas" class="herramientas"></ul>
+    </aside>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "umbral_confianza": 0.8,
+  "similitud_objeto_actualizacion": 0.9,
+  "dias_alerta_vencimiento": 60,
+  "fecha_corte_maestro": "2026-05-30",
+  "monedas": ["COP", "USD", "PEN", "PAB", "HNL"],
+  "moneda_local": { "CO": "COP", "EC": "USD", "PE": "PEN", "PA": "PAB", "HN": "HNL" },
+  "tipos_poliza": {
+    "cumplimiento": "cumplimiento",
+    "responsabilidad civil": "responsabilidad_civil",
+    "calidad": "calidad",
+    "salarios y prestaciones": "salarios_prestaciones"
+  }
+}

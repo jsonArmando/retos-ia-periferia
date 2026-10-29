@@ -1,0 +1,8 @@
+{
+  "tolerancia_cotizacion": 0.02,
+  "tolerancia_aritmetica": 1,
+  "monedas": ["COP", "USD"],
+  "sociedad": "1000",
+  "organizacion_compras": "1000",
+  "unidades": { "hora": "H", "horas": "H", "mes": "MES", "meses": "MES", "mensual": "MES" }
+}

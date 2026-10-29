@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["node", "bun"],
+    "lib": ["ES2023", "DOM"]
+  },
+  "include": ["src", "tests", "demo.ts", "modulo"]
+}
